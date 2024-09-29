@@ -1,0 +1,57 @@
+package com.saga.order.service;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.saga.order.dto.OrderRequestDto;
+import com.saga.order.entity.PurchaseOrder;
+import com.saga.order.enumm.OrderStatus;
+import com.saga.order.repository.OrderRepository;
+
+@Service
+public class OrderService {
+
+	private static final Logger logger = LoggerFactory.getLogger(OrderService.class);
+
+
+	@Autowired
+	private OrderRepository orderRepository;
+
+	public PurchaseOrder createOrder (OrderRequestDto orderRequestDto) {
+
+		logger.info("createOrder: "+orderRequestDto.toString());
+		PurchaseOrder order = orderRepository.save(convertDtoToEntity(orderRequestDto));
+		orderRequestDto.setOrderId(order.getId());
+		logger.info("createOrder: "+orderRequestDto.getOrderId());
+
+		//produce kafka event with status ORDER_CREATED
+		logger.info("produce kafka event with status ORDER_CREATED: ");
+
+		logger.info("Order: "+order.toString());
+		return order;
+	}
+
+
+	public List<PurchaseOrder> getAllOrders(){
+		logger.info("Service Start for getAllOrders: ");
+
+		return orderRepository.findAll();
+	}
+
+
+
+	private PurchaseOrder convertDtoToEntity(OrderRequestDto dto) {
+		PurchaseOrder purchaseOrder = new PurchaseOrder();
+		purchaseOrder.setProductId(dto.getProductId());
+		purchaseOrder.setUserId(dto.getUserId());
+		purchaseOrder.setOrderStatus(OrderStatus.ORDER_CREATED);
+		purchaseOrder.setPrice(dto.getAmount());
+		return purchaseOrder;
+	}
+
+
+}

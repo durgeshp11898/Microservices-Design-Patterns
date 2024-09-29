@@ -1,0 +1,5 @@
+package com.query.product.service;
+
+public class ProductQueryService {
+
+}

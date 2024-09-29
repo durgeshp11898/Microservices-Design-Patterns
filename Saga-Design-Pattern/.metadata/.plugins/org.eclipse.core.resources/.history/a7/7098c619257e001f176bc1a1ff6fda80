@@ -1,0 +1,5 @@
+package com.saga.payment.repository;
+
+public interface UserBalanceRepository {
+
+}

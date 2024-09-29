@@ -1,0 +1,5 @@
+package com.saga.order.dto;
+
+public class OrderRequestDto {
+
+}

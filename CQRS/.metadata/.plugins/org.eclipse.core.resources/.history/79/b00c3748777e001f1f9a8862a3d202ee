@@ -1,0 +1,5 @@
+package com.command.product.controller;
+
+public class ProductCommandController {
+
+}

@@ -1,0 +1,5 @@
+package com.query.product.entity;
+
+public class Product {
+
+}

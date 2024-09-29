@@ -1,0 +1,5 @@
+package com.query.product.controller;
+
+public class ProductQueryController {
+
+}

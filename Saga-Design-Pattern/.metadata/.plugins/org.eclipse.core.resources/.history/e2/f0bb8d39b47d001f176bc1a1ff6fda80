@@ -1,0 +1,22 @@
+package com.saga.order.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.saga.order.dto.OrderRequestDto;
+import com.saga.order.entity.PurchaseOrder;
+import com.saga.order.repository.OrderRepository;
+
+@Service
+public class OrderService {
+
+
+	@Autowired
+	private OrderRepository orderRepository;
+
+	public PurchaseOrder createOrder (OrderRequestDto orderRequestDto) {
+
+		return null;
+	}
+
+}

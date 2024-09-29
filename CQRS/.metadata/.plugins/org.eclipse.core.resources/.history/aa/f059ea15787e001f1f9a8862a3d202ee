@@ -1,0 +1,5 @@
+package com.query.product.dto;
+
+public class ProductEvent {
+
+}

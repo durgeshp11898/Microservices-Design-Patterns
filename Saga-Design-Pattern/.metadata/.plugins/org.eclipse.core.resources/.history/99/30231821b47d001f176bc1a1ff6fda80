@@ -1,0 +1,14 @@
+package com.saga.order.service;
+
+import com.saga.order.dto.OrderRequestDto;
+import com.saga.order.entity.PurchaseOrder;
+
+
+public class OrderService {
+
+	public PurchaseOrder createOrder (OrderRequestDto orderRequestDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

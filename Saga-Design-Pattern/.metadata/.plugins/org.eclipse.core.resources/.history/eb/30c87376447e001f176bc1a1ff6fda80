@@ -1,0 +1,17 @@
+package com.saga.payment.service;
+
+import com.saga.payment.event.OrderEvent;
+
+public class PaymentService {
+
+	public Object newOrderEvent(OrderEvent orderEvent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object cancelOrderEvent(OrderEvent orderEvent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

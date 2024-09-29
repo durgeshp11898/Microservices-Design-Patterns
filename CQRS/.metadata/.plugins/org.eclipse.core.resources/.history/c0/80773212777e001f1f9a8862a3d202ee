@@ -1,0 +1,5 @@
+package com.command.product.dto;
+
+public class ProductEvent {
+
+}

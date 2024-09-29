@@ -1,0 +1,7 @@
+package com.query.product.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductQueryRepository extends JpaRepository<T, ID> {
+
+}

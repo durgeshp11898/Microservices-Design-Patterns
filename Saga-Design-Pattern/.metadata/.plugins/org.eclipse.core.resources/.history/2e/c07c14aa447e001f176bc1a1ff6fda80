@@ -1,0 +1,35 @@
+package com.saga.payment.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.saga.payment.event.OrderEvent;
+import com.saga.payment.repository.UserBalanceRepository;
+import com.saga.payment.repository.UserTransactionRepository;
+
+@Service
+public class PaymentService {
+
+	@Autowired
+	private UserBalanceRepository userBalanceRepository;
+	
+	@Autowired
+	private UserTransactionRepository userTransactionRepository;
+
+	private static final Logger logger = LoggerFactory.getLogger(PaymentService.class);
+
+
+
+
+
+	public Object newOrderEvent(OrderEvent orderEvent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object cancelOrderEvent(OrderEvent orderEvent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

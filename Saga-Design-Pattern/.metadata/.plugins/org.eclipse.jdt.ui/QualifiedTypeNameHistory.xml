@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="com.saga.order.entity.PurchaseOrder"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.saga.order.repository.OrderRepository"/>
+    <fullyQualifiedTypeName name="com.saga.order.enumm.OrderStatus"/>
+    <fullyQualifiedTypeName name="com.saga.order.service.OrderStatusPublisher"/>
+    <fullyQualifiedTypeName name="com.saga.order.event.OrderEvent"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="com.saga.payment.PaymentServiceSagaApplication"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.saga.payment.dto.PaymentRequestDto"/>
+    <fullyQualifiedTypeName name="com.saga.payment.enumm.PaymentStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.saga.payment.repository.UserBalanceRepository"/>
+    <fullyQualifiedTypeName name="com.saga.payment.repository.UserTransactionRepository"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="com.saga.payment.event.PaymentEvent"/>
+    <fullyQualifiedTypeName name="com.saga.payment.dto.OrderRequestDto"/>
+</qualifiedTypeNameHistroy>
